@@ -100,6 +100,7 @@ var Sources = []Source{
 		Name:        "sofmap - Nintendo Switch",
 		URL:         "http://www.sofmap.com/topics/exec/?id=5500",
 		SoldOutText: `<IMG src="/images/system_icon/zaiko06.gif" alt="在庫切れ" border="0">`,
+		SoldOutText2: `<IMG src="/images/system_icon/basket_icon_urikire.gif" alt="売切れ" border="0">`,
 	},
 	{
 		Name:        "rakuten - Nintendo Switch Joy-Con(L)/(R) グレー + ゼルダの伝説　ブレス オブ ザ ワイルド Nintendo Switch版",
@@ -135,10 +136,12 @@ var Sources = []Source{
 		Name:        "rakuten - Nintendo Switch Joy-Con(L)/(R) グレー",
 		URL:         "http://books.rakuten.co.jp/rb/14647221/",
 		SoldOutText: `<span class="status">ご注文できない商品`,
+		SoldOutText2: `<span class="status">販売期間外`,
 	},
 	{
 		Name:        "rakuten - Nintendo Switch Joy-Con(L) ネオンブルー/(R) ネオンレッド",
 		URL:         "http://books.rakuten.co.jp/rb/14647222/",
 		SoldOutText: `<span class="status">ご注文できない商品`,
+		SoldOutText2: `<span class="status">販売期間外`,
 	},
 }

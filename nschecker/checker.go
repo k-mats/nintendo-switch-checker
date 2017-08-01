@@ -15,6 +15,7 @@ type Source struct {
 	Name          string
 	URL           string
 	SoldOutText   string
+	SoldOutText2  string
 	AvailableText string
 }
 
@@ -70,6 +71,9 @@ func Check(s Source, hc *http.Client) (State, error) {
 	for scanner.Scan() {
 		text := scanner.Text()
 		if s.SoldOutText != "" && strings.Contains(text, s.SoldOutText) {
+			return SOLDOUT, nil
+		}
+		if s.SoldOutText2 != "" && strings.Contains(text, s.SoldOutText2) {
 			return SOLDOUT, nil
 		}
 		if s.AvailableText != "" && strings.Contains(text, s.AvailableText) {
